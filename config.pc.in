@@ -1,0 +1,6 @@
+Name: boost_config
+Description: Boost.org config module
+URL: https://github.com/boostorg/config
+Version: @Boost.Config_VERSION@
+
+Cflags: -I@CMAKE_INSTALL_PREFIX@/include
