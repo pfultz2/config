@@ -190,6 +190,7 @@ script:
     - cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX_PATH ..
     - CTEST_OUTPUT_ON_FAILURE=1 CTEST_PARALLEL_LEVEL=2 make -j2 check VERBOSE=1
     - make install
+    - pkg-config --list-all
     - pkg-config boost_config --cflags
     - cd ../include
     - HEADERS=$(echo boost/config/*.hpp)

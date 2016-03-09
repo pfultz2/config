@@ -34,8 +34,8 @@ include(CTest)
 include_directories(include)
 
 install (DIRECTORY include/boost DESTINATION include)
-configure_file(config.pc.in config.pc)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/config.pc DESTINATION lib/pkgconfig)
+configure_file(boost_config.pc.in boost_config.pc)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/boost_config.pc DESTINATION lib/pkgconfig)
 
 include(CheckLibraryExists)
 include(CheckCXXCompilerFlag)
