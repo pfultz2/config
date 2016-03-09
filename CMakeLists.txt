@@ -1,5 +1,8 @@
 cmake_minimum_required (VERSION 2.8)
-project(Boost.Config LANGUAGES C CXX)
+project(Boost.Config)
+
+enable_language(C)
+enable_language(CXX)
 
 set(Boost.Config_VERSION 1.61.0)
 
